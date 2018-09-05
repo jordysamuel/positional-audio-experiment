@@ -1,0 +1,8 @@
+version: 0.5.0
+files:
+  - url: posex-setup-0.5.0.exe
+    sha512: q7+eagXkYTd64+Lo8GKDmC7VuWTapZHD5aP6HhAX8cJ86G7zlvFpiop++WUmx0QD/I2fczOZn9LKmjIlJZ/fAg==
+    size: 62389803
+path: posex-setup-0.5.0.exe
+sha512: q7+eagXkYTd64+Lo8GKDmC7VuWTapZHD5aP6HhAX8cJ86G7zlvFpiop++WUmx0QD/I2fczOZn9LKmjIlJZ/fAg==
+releaseDate: '2018-09-05T09:51:54.232Z'

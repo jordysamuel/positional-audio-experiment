@@ -1,36 +1,58 @@
 {
-  "name": "grayscale",
-  "title": "Grayscale",
-  "version": "3.3.7+1",
-  "homepage": "http://startbootstrap.com/template-overviews/grayscale",
-  "author": "Start Bootstrap",
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
-  },
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "devDependencies": {
-    "bootstrap": "^3.3.7",
-    "browser-sync": "^2.13.0",
-    "electron": "^2.0.0",
-    "font-awesome": "^4.7.0",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.4.0",
-    "gulp-header": "^1.8.12",
-    "gulp-less": "^3.5.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-uglify": "^1.5.4",
-    "howler": "^2.0.15",
-    "jquery": "^1.12.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
-  },
-  "dependencies": {
-    "howler": "^2.0.15"
-  }
+    "name": "posex",
+    "title": "Positional Audio Experiment",
+    "version": "0.5.0",
+    "author": "Jordy Nelson Samuel",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "electron-toolkit": "electron ./node_modules/electron-toolkit"
+    },
+    "files": [],
+    "devDependencies": {
+        "bootstrap": "^3.3.7",
+        "browser-sync": "^2.13.0",
+        "electron": "^2.0.0",
+        "electron-builder": "^20.28.3",
+        "electron-toolkit": "^1.0.24",
+        "font-awesome": "^4.7.0",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "^2.4.0",
+        "gulp-header": "^1.8.12",
+        "gulp-less": "^3.5.0",
+        "gulp-rename": "^1.4.0",
+        "gulp-uglify": "^1.5.4",
+        "howler": "^2.0.15",
+        "jquery": "^1.12.4",
+        "positional-audio": "^1.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
+    },
+    "dependencies": {
+        "howler": "^2.0.15"
+    },
+    "description": "",
+    "build": {
+        "appId": "com.electron.posex",
+        "copyright": "Copyright © 2018 Jordy Nelson Samuel",
+        "productName": "posex",
+        "electronVersion": "2.0.0",
+        "asar": true,
+        "directories": {
+            "app": "C:\\Users\\Jordy\\Documents\\positional-audio-experiment\\positional-audio-experiment",
+            "output": "dist"
+        },
+        "win": {
+            "target": [
+                {
+                    "target": "nsis",
+                    "arch": [
+                        "x64"
+                    ]
+                }
+            ]
+        }
+    }
 }
