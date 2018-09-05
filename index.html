@@ -89,22 +89,13 @@
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+                <h2>About This Experiment</h2>
+                <p> Press W to move forward </p>
+                <p> Press S to move backward </p>
+                <p> Press A to move left </p>
+                <p> Press D to move right </p>
+                <p> Press E to move up </p>
+                <p> Press Q to move down</p>
             </div>
         </div>
     </section>
@@ -176,6 +167,30 @@
         require('./renderer.js');
         var posAudio = require("positional-audio");
         console.log(posAudio);
+
+        window.onkeydown = function(e) {
+            var key = e.keyCode ? e.keyCode : e.which;
+
+            if (key == 68) {
+                console.log('moving right');
+                posAudio.moveRight();
+            }else if(key == 65){
+                console.log('moving left');
+                posAudio.moveLeft();
+            }else if(key == 87){
+                console.log('moving forward');
+                posAudio.moveForward();
+            }else if(key == 83){
+                console.log('moving backward');
+                posAudio.moveBackward();
+            }else if(key == 69){
+                console.log('moving up');
+                posAudio.moveUp();
+            }else if(key == 81){
+                console.log('moving down');
+                posAudio.moveDown();
+            }
+        }
     </script>
 
     <!-- Insert this line after script imports -->
