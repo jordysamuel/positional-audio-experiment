@@ -10,9 +10,6 @@
         "pack": "electron-builder --dir",
         "dist": "electron-builder"
     },
-    "files": [
-        "media/testtrack.wav"
-    ],
     "devDependencies": {
         "bootstrap": "^3.3.7",
         "browser-sync": "^2.13.0",
@@ -51,16 +48,15 @@
             "app": "C:\\Users\\jodia\\Documents\\positional-audio-experiment",
             "output": "dist"
         },
-        "mac": {
+        "win": {
             "target": [
                 {
-                    "target": "dmg",
+                    "target": "nsis",
                     "arch": [
                         "x64"
                     ]
                 }
-            ],
-            "category": ""
+            ]
         }
     }
 }

@@ -6,6 +6,13 @@ exports.userPosition = [0, 0, 0];
 
 exports.howling = { Howl, Howler } = require('howler');
 
+exports.initialiseObjects = function(soundJSON){
+    var sounds = soundJSON.sounds
+    for(var i = 0; i < sounds.length; i += 1){
+        var json = sounds[i];
+    }
+}
+
 exports.startAudio = function (fileName) {
 
     var sound = new Howl({
@@ -13,13 +20,23 @@ exports.startAudio = function (fileName) {
         autoplay: true,
         loop: true,
         volume: 0.5,
-        onplay: function () {
-            Howler.pos(exports.userPosition[0], exports.userPosition[1], exports.userPosition[2]);
-            this.pos(0, 0, 0);
-        },
-        onend: function () {
-            console.log('Finished!');
-        }
+        pos: [0, 0, 0]
+    });
+
+    var sound2 = new Howl({
+        src: ['./media/testtrack2.mp3'],
+        autoplay: true,
+        loop: true,
+        volume: 0.5,
+        pos: [0, 100, 0]
+    });
+
+    var sound3 = new Howl({
+        src: ['./media/grass.mp3'],
+        autoplay: true,
+        loop: true,
+        volume: 0.5,
+        pos: [exports.userPosition[0], exports.userPosition[1], exports.userPosition[2]]
     });
 
     console.log('audio started');

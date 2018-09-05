@@ -165,6 +165,18 @@
     <script src="js/grayscale.min.js"></script>
     <script>
         require('./renderer.js');
+
+
+        var soundJSON = {
+            sounds: [
+                {
+                    filename: "./media/grass.mp3",
+                    startArray: [-100, -100, 0],
+                    endArray: [100, 100, 0] 
+                }
+            ]
+        };
+
         var posAudio = require("positional-audio");
         console.log(posAudio);
 
