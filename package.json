@@ -6,14 +6,19 @@
     "main": "main.js",
     "scripts": {
         "start": "electron .",
-        "electron-toolkit": "electron ./node_modules/electron-toolkit"
+        "electron-toolkit": "electron ./node_modules/electron-toolkit",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
     },
-    "files": [],
+    "files": [
+        "media/testtrack.wav"
+    ],
     "devDependencies": {
         "bootstrap": "^3.3.7",
         "browser-sync": "^2.13.0",
         "electron": "^2.0.0",
         "electron-builder": "^20.28.3",
+        "electron-packager": "^12.1.1",
         "electron-toolkit": "^1.0.24",
         "font-awesome": "^4.7.0",
         "gulp": "^3.9.1",
@@ -24,14 +29,15 @@
         "gulp-uglify": "^1.5.4",
         "howler": "^2.0.15",
         "jquery": "^1.12.4",
-        "positional-audio": "^1.0.0"
+        "positional-audio": "file:node_write/positional-audio"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
     },
     "dependencies": {
-        "howler": "^2.0.15"
+        "howler": "^2.0.15",
+        "npm": "^6.4.1"
     },
     "description": "",
     "build": {
@@ -41,18 +47,19 @@
         "electronVersion": "2.0.0",
         "asar": true,
         "directories": {
-            "app": "C:\\Users\\Jordy\\Documents\\positional-audio-experiment\\positional-audio-experiment",
+            "app": "C:\\Users\\jodia\\Documents\\positional-audio-experiment",
             "output": "dist"
         },
-        "win": {
+        "mac": {
             "target": [
                 {
-                    "target": "nsis",
+                    "target": "dmg",
                     "arch": [
                         "x64"
                     ]
                 }
-            ]
+            ],
+            "category": ""
         }
     }
 }

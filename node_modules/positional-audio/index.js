@@ -6,10 +6,10 @@ exports.userPosition = [0, 0, 0];
 
 exports.howling = { Howl, Howler } = require('howler');
 
-exports.startAudio = function () {
+exports.startAudio = function (fileName) {
 
     var sound = new Howl({
-        src: ['./media/testtrack.wav'],
+        src: ['./media/testtrack.mp3'],
         autoplay: true,
         loop: true,
         volume: 0.5,
