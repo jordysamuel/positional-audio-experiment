@@ -1,4 +1,9 @@
 // This file is required by the index.html file and will
 // be executed in the renderer process for that window.
 // All of the Node.js APIs are available in this process.
-console.log('hi');
+console.log('testing');
+
+//list of events to be fired
+
+//start event
+var startEvent = new Event('start');
