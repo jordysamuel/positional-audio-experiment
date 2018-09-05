@@ -27,7 +27,6 @@
         "gulp-less": "^3.5.0",
         "gulp-rename": "^1.4.0",
         "gulp-uglify": "^1.5.4",
-        "howler": "^2.0.15",
         "jquery": "^1.12.4",
         "positional-audio": "file:node_write/positional-audio"
     },
@@ -36,8 +35,10 @@
         "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
     },
     "dependencies": {
+        "ajv": "^6.5.3",
         "howler": "^2.0.15",
-        "npm": "^6.4.1"
+        "npm": "^6.4.1",
+        "popper.js": "^1.14.4"
     },
     "description": "",
     "build": {
