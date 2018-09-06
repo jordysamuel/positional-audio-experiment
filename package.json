@@ -35,7 +35,8 @@
         "ajv": "^6.5.3",
         "howler": "^2.0.15",
         "npm": "^6.4.1",
-        "popper.js": "^1.14.4"
+        "popper.js": "^1.14.4",
+        "positional-audio": "file:node_write/positional-audio"
     },
     "description": "",
     "build": {
