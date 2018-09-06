@@ -28,15 +28,7 @@ exports.startAudio = function (fileName) {
         autoplay: true,
         loop: true,
         volume: 0.5,
-        pos: [0, 100, 0]
-    });
-
-    var sound3 = new Howl({
-        src: ['./media/grass.mp3'],
-        autoplay: true,
-        loop: true,
-        volume: 0.5,
-        pos: [exports.userPosition[0], exports.userPosition[1], exports.userPosition[2]]
+        pos: [0, 25, 0]
     });
 
     console.log('audio started');
